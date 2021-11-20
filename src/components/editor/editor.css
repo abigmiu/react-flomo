@@ -1,0 +1,67 @@
+@import '~quill/dist/quill.core.css';
+@import '~quill/dist/quill.snow.css';
+.editorWrapper {
+  width: 500px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  border: 2px solid #e8e8e8;
+  border-radius: 8px;
+}
+.editorWrapper #editor {
+  min-height: 80px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.editorWrapper .editor-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.editorWrapper .menu-item {
+  cursor: pointer;
+  color: #7d7d7d;
+  border-color: transparent;
+  margin-right: 10px;
+}
+.editorWrapper .send-btn {
+  cursor: pointer;
+  color: #fff;
+  background: #55bb8e;
+  border-color: #55bb8e;
+  font-size: 12px;
+  line-height: 1;
+  padding: 9px 15px;
+  border: none;
+  border: 1px solid;
+  border-radius: 3px;
+  outline: none;
+  transition: all 0.2s;
+}
+.editorWrapper .send-btn:active {
+  transform: translateY(4px);
+}
+.editorWrapper .send-btn.send-btn__disabled {
+  background: #aaddc6;
+  border-color: #aaddc6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.ql-toolbar {
+  display: none;
+}
+.ql-container.ql-snow {
+  border: none;
+}
+.ql-editor {
+  padding: 0;
+}
+.ql-editor p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgb(50, 50, 50);
+}
+.ql-editor.ql-blank::before {
+  font-size: 14px;
+  line-height: 1.6;
+}
