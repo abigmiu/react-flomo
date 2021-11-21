@@ -1,0 +1,18 @@
+.actions .actions-item .actions-item__icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+}
+.actions .actions-item {
+  cursor: pointer;
+}
+.actions .actions-item:hover {
+  background: #55bb8e;
+}
+
+.actions .actions-item:hover .actions-item__icon {
+  color: #ffffff;
+}
+.actions .actions-item:hover .actions-item__name {
+  color: #ffffff;
+}

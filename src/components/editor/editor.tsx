@@ -18,7 +18,7 @@ export default function Editor() {
     <div className="editorWrapper">
       <div id="editor"></div>
       <div className="editor-menu">
-        <div className="editor-menu__left">
+        <div className="editor-menu__left flex">
           {/* 标签 */}
           <span className="menu-item">
             <svg
@@ -45,7 +45,7 @@ export default function Editor() {
               xmlns="http://www.w3.org/2000/svg">
               <path
                 data-v-3be209ba=""
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
             </svg>
           </span>
@@ -60,7 +60,7 @@ export default function Editor() {
               xmlns="http://www.w3.org/2000/svg">
               <path
                 data-v-3be209ba=""
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"></path>{' '}
               <path
                 data-v-3be209ba=""
@@ -95,7 +95,7 @@ export default function Editor() {
                 d="M5.313 3.136h-1.23V9.54c0 2.105 1.47 3.623 3.917 3.623s3.917-1.518 3.917-3.623V3.136h-1.23v6.323c0 1.49-.978 2.57-2.687 2.57-1.709 0-2.687-1.08-2.687-2.57V3.136z"></path>{' '}
               <path
                 data-v-3be209ba=""
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M12.5 15h-9v-1h9v1z"></path>
             </svg>
           </span>
@@ -111,7 +111,7 @@ export default function Editor() {
               className="bi bi-image">
               <path
                 data-v-3be209ba=""
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M14.002 2h-12a1 1 0 0 0-1 1v9l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094L15.002 9.5V3a1 1 0 0 0-1-1zm-12-1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm4 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path>
             </svg>
           </span>

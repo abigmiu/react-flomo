@@ -1,1 +1,20 @@
 @import '~antd/dist/antd.css';
+.App {
+  width: min-content;
+  margin: 0 auto;
+  height: 100%;
+}
+.layout {
+  height: 100%;
+  display: flex;
+  padding: 20px 0;
+}
+.layout .aside {
+  width: 300px;
+  height: 100%;
+}
+.layout .main {
+  width: 640px;
+  padding-left: 20px;
+  height: 100%;
+}
