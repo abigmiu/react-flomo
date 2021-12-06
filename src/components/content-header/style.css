@@ -1,0 +1,14 @@
+.content-header .search {
+    width: 200px;
+    height: 40px;
+    background: #efefef;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+.content-header .search .search-input {
+    outline: none;
+    border: none;
+    background: inherit;
+    width: 100%;
+    height: 100%;
+}

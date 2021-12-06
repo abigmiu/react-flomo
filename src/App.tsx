@@ -2,8 +2,7 @@ import React from 'react'
 
 import './App.css'
 import AsideLeft from './views/aside/aside'
-import Editor from './components/editor/editor'
-import FlomoItem from './components/flomo-item/flomo-item'
+import Content from "./views/content/content";
 function App() {
   return (
     <div className="App">
@@ -12,8 +11,7 @@ function App() {
           <AsideLeft></AsideLeft>
         </aside>
         <main className="main">
-          <Editor></Editor>
-          <FlomoItem></FlomoItem>
+            <Content></Content>
         </main>
       </div>
     </div>

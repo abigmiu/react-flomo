@@ -1,0 +1,14 @@
+.flomo-item {
+    margin-top: 20px;
+}
+.flomo-item .tag {
+    color: #5783f7;
+    cursor: pointer;
+    background-color: #eef3fe;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.flomo-item-actions div:hover {
+    color: #55bb8e;
+}
