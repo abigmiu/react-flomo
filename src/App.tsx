@@ -2,7 +2,7 @@ import React from 'react'
 
 import './App.css'
 import AsideLeft from './views/aside/aside'
-import Content from "./views/content/content";
+import Content from './views/content/content'
 function App() {
   return (
     <div className="App">
@@ -11,7 +11,7 @@ function App() {
           <AsideLeft></AsideLeft>
         </aside>
         <main className="main">
-            <Content></Content>
+          <Content></Content>
         </main>
       </div>
     </div>

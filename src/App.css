@@ -17,4 +17,5 @@
   width: 640px;
   padding-left: 20px;
   height: 100%;
+  overflow-y: hidden;
 }
