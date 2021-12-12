@@ -1,24 +1,28 @@
 import Editor from '../../components/editor/editor'
 import FlomoItem from '../../components/flomo-item/flomo-item'
 import ContentHeader from '../../components/content-header/content-header'
-import React, { useEffect } from 'react'
+import React, { Fragment, useEffect, useRef, useState } from 'react'
 import './style.css'
 export default function Content() {
-  let itemsWrapperHeight = 0
+  const [itemsWrapperHeight, setItemsWrapperHeight] = useState(0)
 
-  const mainTop = (
-    document.querySelector('.main') as HTMLElement
-  ).getBoundingClientRect().top
-  const mainHeight = (
-    document.querySelector('.main') as HTMLElement
-  ).getBoundingClientRect().height
-  const wrapperTop = (
-    document.querySelector('.items-wrapper') as HTMLElement
-  ).getBoundingClientRect().top
-  itemsWrapperHeight = mainHeight - (wrapperTop - mainTop)
+  useEffect(() => {
+    const mainTop = (
+      document.querySelector('.main') as HTMLElement
+    ).getBoundingClientRect().top
+    const mainHeight = (
+      document.querySelector('.main') as HTMLElement
+    ).getBoundingClientRect().height
+    const wrapperTop = (
+      document.querySelector('.items-wrapper') as HTMLElement
+    ).getBoundingClientRect().top
+    const height = mainHeight - (wrapperTop - mainTop)
+
+    setItemsWrapperHeight(height)
+  }, [])
 
   return (
-    <div>
+    <Fragment>
       <ContentHeader></ContentHeader>
       <Editor></Editor>
       <div
@@ -35,6 +39,6 @@ export default function Content() {
         <FlomoItem></FlomoItem>
         <FlomoItem></FlomoItem>
       </div>
-    </div>
+    </Fragment>
   )
 }
